@@ -8,6 +8,11 @@ const template = `
             <li>${joke1}</li>
             <li>${joke2}</li>
             <li>${joke3}</li>
-        </ul>
+     </ul>
 `
 main.innerHTML = template;
+
+const body = document.querySelector('body');
+const p = document.createElement('p');
+p.textContent = "That's all folks!";
+body.appendChild(p);
